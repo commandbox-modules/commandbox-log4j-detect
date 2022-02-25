@@ -11,12 +11,11 @@ Install the module like so:
 install commandbox-log4j-detect
 ```
 
-On first run, the module will download the latest version of the 3rd party library.  It will not check or download again on subsequent runs.  You can uninstall and re-install the module to force it to re-download the latest 3rd party library if you wish.
+On first run, the module will download the latest version of the 3rd party library.  It will not check or download again on subsequent runs.  You can use the `--forceBinaryDownload` flag when scanning to force it to re-download the latest 3rd party library if you wish.
 
 
 ```bash
-uninstall commandbox-log4j-detect --system
-install commandbox-log4j-detect
+CommandBox> log4j-detect C:/websites/ --forceBinaryDownload
 ```
 
 
@@ -37,3 +36,15 @@ CommandBox> log4j-detect C:/ColdFusion2021
 CommandBox> log4j-detect /path/to/folder
 ```
 
+
+Scan a list of directories for vulnerable Log4j jars
+
+```bash
+CommandBox> log4j-detect C:/foo,C:/bar,D:/baz
+```
+
+Scan a all drives on your machine.  This can take a very long time.
+
+```bash
+CommandBox> log4j-detect --scanAllDrives
+```

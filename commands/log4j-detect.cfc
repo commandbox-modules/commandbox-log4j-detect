@@ -1,6 +1,6 @@
 /**
 * Scan all jars in folder recursivley for log4j vulns
-*
+* .
 * Scan the current dir and all sub dirs for vulnerable Log4j jars
 * {code}
 * log4j-detect 
