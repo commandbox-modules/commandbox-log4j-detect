@@ -124,9 +124,13 @@ component {
 				.listRoots(), true )
 				.map( (d)=>d.toString() );
 		} else {
-			var directories = directory
-				.listToArray()
-				.map( (d)=>resolvePath( d ) );
+			if( directory.listLen() > 0  ) {
+				var directories = directory
+					.listToArray()
+					.map( (d)=>resolvePath( d ) );
+			} else {
+				var directories = [ resolvePath( directory ) ];
+			}
 		}
 
 		// Strip trailing slashes
