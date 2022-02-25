@@ -1,0 +1,18 @@
+{
+    "name":"CommandBox Log4j Detect",
+    "version":"1.0.0",
+    "author":"Brad Wood",
+    "homepage":"https://github.com/commandbox-modules/commandbox-log4j-detect/",
+    "repository":{
+        "type":"",
+        "URL":"https://github.com/commandbox-modules/commandbox-log4j-detect/"
+    },
+    "bugs":"",
+    "slug":"commandbox-log4j-detect",
+    "shortDescription":"A simple wrapper for the Log4j Detect project found here: https://github.com/whitesource/log4j-detect-distribution",
+    "type":"commandbox-modules",
+    "scripts":{
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    }
+}
