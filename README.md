@@ -11,7 +11,7 @@ Install the module like so:
 CommandBox> install commandbox-log4j-detect
 ```
 
-On first run, the module will download the latest version of the 3rd party library.  It will not check or download again on subsequent runs.  You can use the `--forceBinaryDownload` flag when scanning to force it to re-download the latest 3rd party library if you wish.
+On first run, the module will download the latest version of the 3rd party library based on your OS and CPU arch.  It will not check or download again on subsequent runs.  You can use the `--forceBinaryDownload` flag when scanning to force it to re-download the latest 3rd party library if you wish.
 
 
 ```bash
