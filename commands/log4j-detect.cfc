@@ -49,7 +49,7 @@ component {
 		}
 
 		var CPUArch = 'amd';
-		if( getSystemSetting( 'os.arch', '' ).findNoCase( 'arm' ) ) {
+		if( getSystemSetting( 'os.arch', '' ).findNoCase( 'arm' ) ||  getSystemSetting( 'os.arch', '' ).findNoCase( 'aarch' )  ) {
 			CPUArch = 'arm';
 		}
 
